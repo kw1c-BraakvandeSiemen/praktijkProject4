@@ -1,0 +1,95 @@
+/*
+  Auteur: Siemen van de Braak
+  Aanmaakdatum: 10-06-2022
+  Omschrijving: overzicht
+*/
+
+table
+{
+    font-family: 'Inter';
+    text-align: center;
+    border:2px solid rgb(92,154,209);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+table tr
+{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+th
+{
+    background-color: rgb(92,154,209);
+    color: white;
+    border: rgb(92,154,209) solid 2px;
+    padding: 5px;
+}
+
+table th,
+table td
+{
+    word-wrap: break-word;
+    padding: 5px;
+    text-align: center;
+}
+
+/* geeft oneven rij een andere kleur */
+table tr:nth-child(odd)
+{
+    background-color: #E9E9E9;
+}
+
+fieldset
+{
+    font-family: 'Inter';
+    border: 1px solid rgb(92,154,209);
+    background: rgb(92,154,209);
+    background: linear-gradient(90deg, rgba(92,154,209,1) 33%, rgba(92,154,209,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 80%;
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+
+
+input[type=text]
+{
+    font-family: 'Inter';
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@media only screen and (max-width: 899px)
+{
+    table
+    {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 150px;
+    }
+}

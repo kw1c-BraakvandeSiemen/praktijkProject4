@@ -1,0 +1,245 @@
+/*
+  Auteur: Siemen van de Braak
+  Aanmaakdatum: 02-06-2022
+  Omschrijving: navbar
+*/
+/* mobile portrait */
+
+/* font inladen */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+
+@font-face {
+  font-family: 'FTY SKORZHEN NCV';
+  src: url('/Praktijk/Thema4/T4_PraktijkProject/fonts/FTYSKORZHENNCV.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/Praktijk/Thema4/T4_PraktijkProject/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body
+{
+  background: #FCCC00;
+}
+
+/* margin en padding weghalen en font inladen */
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* positioneren en achtergrondkleur voor navbar */
+header
+{
+  width: 100%;
+  background-color: rgb(0, 42, 134);
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.9);
+}
+
+/* navbar grote en positionering */
+.navbar
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* logo positioneren en muis naar pointer veranderen om aan te tonen klikbaar */
+.logo
+{
+  width: 82px;
+  cursor: pointer;
+  margin-left: 37%;
+}
+
+/* grote van hamburger menu icon */
+.menu
+{
+  width: 50px;
+  cursor: pointer;
+  margin-right: 8%;
+}
+
+/* positioneren van de links in de nav naar de rechterkant */
+nav
+{
+  flex: 1;
+  text-align: center;
+}
+
+/* hamburgermenu positioneren */
+nav ul
+{
+  width: 100%;
+  background-color: rgb(0, 42, 134);
+  position: absolute;
+  top: 210px;
+  right: 0;
+  z-index: 2;
+}
+
+/* positioneren links */
+nav ul li
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* navbar icon in menu zetten */
+.menu
+{
+  display: block;
+}
+
+/* grote logo in navbar */
+.logo
+{
+  width: 82px;
+}
+
+/* transition van menu klikken en scrollbar weghalen */
+#menuList
+{
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* list style weghalen en positioneren */
+nav ul li
+{
+  list-style: none;
+}
+
+/* kleur updaten en size */
+nav ul li a
+{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Fjalla One";
+}
+
+.headerAfbeeld
+{
+  align-items: center;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 8em;
+}
+
+/* mobile landscape query */
+@media only screen and (max-width: 899px) and (orientation: landscape)
+{
+
+  /* positionering hamburgermenu links */
+  .menu
+  {
+    margin-right: 2%;
+  }
+  .headerAfbeeld
+  {
+    align-items: center;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 10em;
+  }
+
+  nav ul
+  {
+    top: 236px;
+  }
+
+}
+
+
+/* desktop query */
+@media only screen and (min-width: 900px)
+{
+  /* transtition uitzetten en menu links altijd zichtbaar */
+  #menuList
+  {
+    overflow:visible;
+    transition: 0s;
+  }
+
+  /* hamburger menu weghalen */
+  .menu
+  {
+    display:none;
+  }
+
+  nav
+  {
+    text-align: right;
+  }
+
+  /* positioneren links */
+  nav ul
+  {
+    position: absolute;
+    top: 327px;
+  }
+
+  /* positioneren links */
+  nav ul li
+  {
+    display: inline-block;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .headerAfbeeld
+  {
+    align-items: center;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 19em;
+  }
+
+}
+
+
+footer
+{
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #9F1000;
+}
+
+footer p
+{
+  font-family: "Fjalla One";
+  padding: 10px;
+}
+
+/* footer onderaan plaatsen op mobiel */
+@media only screen and (max-width: 899px) and (orientation: portrait)
+{
+  footer
+  {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+}

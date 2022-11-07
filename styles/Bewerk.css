@@ -1,0 +1,126 @@
+/*
+  Auteur: Siemen van de Braak
+  Aanmaakdatum: 12-06-2022
+  Omschrijving: bewerk
+*/
+
+
+form
+{
+    font-family: 'Inter';
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    color: white;
+}
+
+.ins
+{
+    font-family: 'Inter';
+    padding: 16px;
+    background-color: #9F1000;
+    border-radius: 25px;
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.5));
+    margin-bottom: 120px;
+}
+
+
+input[type=text], input[type=datetime-local]
+{
+    font-family: 'Inter';
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=submit]
+{
+    font-family: 'Inter';
+    background: rgb(92,154,209);
+    background: linear-gradient(90deg, rgba(92,154,209,1) 33%, rgba(92,154,209,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    display: block;
+    padding: 17px 0px;
+    margin: 42px 0px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 72%;
+    border-radius: 10px;
+}
+
+
+button
+{
+    background: rgb(92,154,209);
+    background: linear-gradient(90deg, rgba(92,154,209,1) 33%, rgba(92,154,209,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    display: block;
+    padding: 17px 0px;
+    margin: 42px 0px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 72%;
+    border-radius: 25px;
+}
+
+button:hover
+{
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.bewerksymbool
+{
+    width: 24px;
+    height: 24px;
+}
+
+.bewerkLink:visited, .bewerkLink
+{
+    color: green;
+}
+
+.deleteLink:visited, .deleteLink
+{
+    color: red;
+}
+
+.container
+{
+    padding: 16px;
+    background-color: #9F1000;
+    border-radius: 15px;
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.5));
+    margin-bottom: 120px;
+}
+
+.updated
+{
+    font-family: 'Inter';
+    padding: 16px;
+    background: rgb(92,154,209);
+    background: linear-gradient(90deg, rgba(92,154,209,1) 33%, rgba(92,154,209,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.5));
+    color: white;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.update a, a:visited
+{
+    color: white;
+}
